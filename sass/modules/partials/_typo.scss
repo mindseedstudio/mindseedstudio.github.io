@@ -1,0 +1,53 @@
+//Typography Includes: Font Name | Font Size | Font Weight | Line Height
+//Variable Prefix: $typo-
+@font-face {
+    font-family: 'sf_ui_displaylight';
+    src: url('fonts/sf-ui-display-light-webfont.woff2') format('woff2'),
+         url('fonts/sf-ui-display-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_displaymedium';
+    src: url('fonts/sf-ui-display-medium-webfont.woff2') format('woff2'),
+         url('fonts/sf-ui-display-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_displaybold';
+    src: url('fonts/sf-ui-display-bold-webfont.woff2') format('woff2'),
+         url('fonts/sf-ui-display-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$typo-family-lt: 'sf_ui_displaylight';
+$typo-family-md: 'sf_ui_displaymedium';
+$typo-family-bd: 'sf_ui_displaybold';
+
+//Heading Font Size | Line Height
+$typo-sz-h1: 40px;
+$typo-sz-h2: 32px;
+$typo-sz-h3: 27px;
+$typo-sz-h4: 18px;
+
+$typo-lh-h1: 48px;
+$typo-lh-h2: 40px;
+$typo-lh-h3: 32px;
+$typo-lh-h4: 24px;
+
+//Text Font Size | Line Height
+$typo-sz-lg: 18px; 
+$typo-sz-md: 16px; 
+$typo-sz-sm: 14px; 
+
+$typo-lh-lg: 24px; 
+$typo-lh-md: 24px; 
+$typo-lh-sm: 16px;
+$typo-lh-p: 28px;

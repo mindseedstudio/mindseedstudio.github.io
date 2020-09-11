@@ -1,0 +1,106 @@
+$modal: '.modal';
+#{$modal}{
+    &-icon{
+        padding: 0 18px;
+        text-align: center;
+        font-size: 28px;
+        background-color: $color-gr-dk;
+        line-height: 62px;
+        @include size(60px);
+        @include radius(50%);
+        color: #fff;
+    }
+
+    &-header{
+        padding: #{$spc-16}px #{$spc-32}px;
+    }
+
+    &-body{
+        padding: #{$spc-32}px;
+    }
+
+    &-message{
+        padding-left: #{$spc-32}px;
+        
+        p{
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-delete{
+        .modal-header{
+            background-color: $color-rd;
+            color: #fff;
+        }
+
+        .close{
+            color: #fff;
+        }
+
+        .modal-icon{
+            background-color: $color-rd;
+        }
+    }
+
+    &-success{
+        .modal-header{
+            background-color: $color-gn;
+            color: #fff;
+        }
+
+        .close{
+            color: #fff;
+        }
+
+        .modal-icon{
+            background-color: $color-gn;
+        }
+    }
+
+    &-primary{
+        .modal-header{
+            background-color: $color-pm;
+            color: #fff;
+        }
+
+        .close{
+            color: #fff;
+        }
+
+        .modal-icon{
+            background-color: $color-pm;
+        }
+    }
+
+    &-warning{
+        .modal-header{
+            background-color: $color-yl;
+            color: #fff;
+        }
+
+        .close{
+            color: #fff;
+        }
+
+        .modal-icon{
+            background-color: $color-yl;
+        }
+    }
+
+    &-footer{
+        padding: 0;
+        border: none;
+        background-color: $color-gr-md;
+
+        & > *{
+            width: 50%;
+            margin: 0;
+            font-size: $typo-sz-md;
+            @include radius(0);
+        }
+    }
+
+    
+}

@@ -1,0 +1,122 @@
+//Specific CSS for Dashboard Designs (Admins, Users and Health Practicioner)
+$dash: '.dash';
+
+#{$dash}{
+    &-sidebar{
+        position: fixed;
+        left: -240px;
+        width: 240px;
+        height: 100%;
+        background-color: lighten($color-pm, 5%);
+        background-image: linear-gradient(105deg, #1157d1, #42bde9);
+        @include transition(left 0.33s);
+
+        @media screen and (min-width: 1200px){
+            left: 0;
+            @include transition(none);
+        }
+
+        &.show{
+            left: 0;
+        }
+
+
+        &-nav{
+            li{
+                // border-bottom: 1px solid rgba(255,255,255, 0.2);
+                &.active{
+                    background-color: #fff;
+
+                    a{
+                        color: lighten($color-pm, 5%);
+                        
+                        &:hover{
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+
+            a{
+                display: block;
+                padding: #{$spc-16}px;
+                color: #fff;
+                text-decoration: none;
+                @include transition("color 0.33s, background-color 0.33s");
+                
+                &:hover{
+                    background-color: darken($color-pm, 3%);
+                }
+            }
+        }
+    }
+
+    &-header{
+        height: 82px;
+        padding: 0 #{$spc-32}px;
+    }
+
+    &-logo{
+        border-bottom: 1px solid rgba(255,255,255, 0.2);
+    }
+
+    &-main{
+        @include transition(padding-left 0.33s);
+
+        .dash-header{
+            @include shadow(0px 0px 2px 2px rgba(0,0,0,0.1));
+        }    
+
+        @media screen and (min-width: 1200px){
+            @include transition(none);
+            padding-left: 240px;
+        }
+
+        &.menu-shown{
+            padding-left: 240px;
+        }
+    }
+
+    &-logout{
+        font-size: $typo-sz-sm;
+        text-decoration: none;
+        color: lighten($color-rd, 8%);
+        @include transition(color 0.33s);
+
+        &:hover{
+            color: darken($color-rd, 8%);
+        }
+
+    }
+
+    &-content{
+        padding: #{$spc-24}px #{$spc-32}px;
+        background: $color-gr-lt;
+    }
+
+    &-footer{
+        color: darken($color-gr-dk, 20%);
+        font-size: $typo-sz-sm;
+    }
+
+    &-menu{
+        color: darken($color-gr-dk, 25%);
+        @include transition(color 0.33s);
+        text-decoration: none;
+
+        span{
+            margin-left: 8px;
+            @include transition(margin-left 0.33s);
+
+        }
+
+        &:hover{
+            color: $color-txt;
+
+            span{
+                margin-left: 12px;
+            }
+        }
+    }
+    
+}

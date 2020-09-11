@@ -1,0 +1,110 @@
+$table: '.table';
+#{$table}{
+    margin-bottom: 0;
+
+    &>:not(caption)>*>*{
+        padding: 12px #{$spc-8}px;
+    }
+
+    th{
+        font:{
+            size: 12px;
+        };
+        text-transform: uppercase;
+        border-bottom-width: 4px;
+        border-bottom-color: $color-gr-lt!important;
+    }
+
+    td{
+        font-size: $typo-sz-sm;
+        border-bottom-color: $color-gr-md!important;
+    }
+
+    &-actions{
+        li{
+            margin-left: 24px;
+
+            &:first-of-type{
+                margin-left: 0;
+            }
+
+            a{
+                font-size: $typo-sz-md;
+                @include transition(color 0.33s);
+            }
+        }
+    }
+
+    &-filter{
+        margin-bottom: #{$spc-8}px;
+    }
+
+    &-sort{
+        
+        font-size: $typo-sz-sm;
+
+        span, select{
+            color: darken($color-gr-dk, 25%);
+        }
+
+        span{
+            margin-right: #{$spc-4}px;
+        }
+
+        select{
+            border: none;
+            border-bottom: 2px solid $color-gr-lt;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    &-search{
+        margin-bottom: #{$spc-4}px;
+        i, input{
+            vertical-align: middle;
+            font-size: $typo-sz-sm;
+            color: darken($color-gr-dk, 25%);
+
+        }
+
+        i{
+            color: darken($color-gr-dk, 6%);
+        }
+
+        input{
+            border: none;
+            padding: 0 #{$spc-8}px;
+
+            &:focus{
+                outline: 0;
+            }
+        }
+    }
+}
+
+$pagination: '.pagination';
+#{$pagination}{
+    .page-item{
+        &.active .page-link{
+            background-color: $color-pm;
+            color: #fff;
+            cursor: default;
+        }
+    }
+
+    .page-link{
+        padding: #{$spc-4}px #{$spc-8}px;
+        @include size(32px);
+        text-align: center;
+        font-size: $typo-sz-sm;
+        color: $color-txt;
+        @include transition(background-color 0.33s);
+
+        &:hover{
+            color: $color-pm;
+            background-color: lighten($color-pm, 41%);
+        }
+    }
+}

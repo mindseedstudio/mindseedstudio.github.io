@@ -1,0 +1,36 @@
+$alert: '.alert';
+#{$alert}{
+    &-link{
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    &-primary{
+        color: darken($color-pm, 37%);
+        // color: $color-pm;
+        background-color: lighten($color-pm, 41%);
+        border-color: lighten($color-pm, 33%);
+    }
+
+    &-success{
+        color: darken($color-gn, 37%);
+        // color: $color-pm;
+        background-color: lighten($color-gn, 50%);
+        border-color: lighten($color-gn, 35%);
+    }
+
+    &-danger{
+        color: darken($color-rd, 37%);
+        // color: $color-pm;
+        background-color: lighten($color-rd, 38%);
+        border-color: lighten($color-rd, 31%);
+    }
+
+    &-warning{
+        color: darken($color-yl, 37%);
+        // color: $color-pm;
+        background-color: lighten($color-yl, 43%);
+        border-color: lighten($color-yl, 29%);
+    }
+}

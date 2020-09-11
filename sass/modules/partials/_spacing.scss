@@ -1,0 +1,81 @@
+//Includes: Margin and Padding Values
+//Variable Prefix: $spc-
+$spc-4: 4;
+$spc-8: 8;
+$spc-16: 16;
+$spc-24: 24;
+$spc-32: 32;
+$spc-40: 40;
+$spc-48: 48;
+$spc-56: 56;
+$spc-64: 64;
+$spaces: ($spc-4, $spc-8, $spc-16, $spc-24, $spc-32, $spc-40, $spc-48, $spc-56, $spc-64);
+@each $spcs in $spaces{
+    .spc-mg-#{$spcs}{
+        margin: #{$spcs}px!important;    
+    }
+    
+    .spc-pd-#{$spcs}{
+        padding: #{$spcs}px!important;    
+    }
+    
+    .spc-mt-#{$spcs}{
+        margin-top: #{$spcs}px!important;
+    }
+
+    .spc-mb-#{$spcs}{
+        margin-bottom: #{$spcs}px!important;
+    }
+
+    .spc-ml-#{$spcs}{
+        margin-left: #{$spcs}px!important;
+    }
+
+    .spc-mr-#{$spcs}{
+        margin-right: #{$spcs}px!important;
+    }
+
+    .spc-pt-#{$spcs}{
+        padding-top: #{$spcs}px!important;
+    }
+
+    .spc-pb-#{$spcs}{
+        padding-bottom: #{$spcs}!important;
+    }
+
+    .spc-pl-#{$spcs}{
+        padding-left: #{$spcs}px!important;
+    }
+
+    .spc-pr-#{$spcs}{
+        padding-right: #{$spcs}px!important;
+    }
+
+    .spc-mlr-#{$spcs}{
+        margin: {
+            right: #{$spcs}px!important;
+            left: #{$spcs}px!important;
+        }
+    }
+
+    .spc-mtb-#{$spcs}{
+        margin: {
+            top: #{$spcs}px!important;
+            bottom: #{$spcs}px!important;
+        }
+    }
+
+    .spc-plr-#{$spcs}{
+        padding: {
+            right: #{$spcs}px!important;
+            left: #{$spcs}px!important;
+        }
+    }
+
+    .spc-ptb-#{$spcs}{
+        padding: {
+            top: #{$spcs}px!important;
+            bottom: #{$spcs}px!important;
+        }
+    }
+}

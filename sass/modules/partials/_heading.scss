@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: $typo-family-bd;
+    margin-bottom: #{$spc-24}px;
+
+    &.has-border{
+        padding-bottom: #{$spc-8}px;
+        border-bottom: 1px solid #ECECEE;
+    }
+}
+
+.h-light{
+    font-family: $typo-family-lt;
+}
+
+h1, .h1{
+    font-size: $typo-sz-h1;
+    line-height: $typo-lh-h1;
+}
+
+h2, .h2{
+    font-size: $typo-sz-h2;
+    line-height: $typo-lh-h2;
+}
+
+h3, .h3{
+    font-size: $typo-sz-h3;
+    line-height: $typo-lh-h3;
+}
+
+h4, .h4{
+    font-size: $typo-sz-h4;
+    line-height: $typo-lh-h4;
+}
+
+h5, .h5{
+    font-size: $typo-sz-md;
+    line-height: $typo-lh-md;
+}
+
+h6, .h6{
+    font-size: $typo-sz-sm;
+    line-height: $typo-lh-sm;
+}

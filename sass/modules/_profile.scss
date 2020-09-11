@@ -1,0 +1,60 @@
+$profile: '.profile';
+#{$profile}{
+    &-image{
+        margin: 0;
+        margin-right: #{$spc-24}px;
+        overflow: hidden;
+        @include radius(50%);
+        @include size(140px);
+        @include min-size(140px);
+    }
+
+    &-call{
+        @include radius(25px);
+        font-size: $typo-sz-sm;
+    }
+
+    &-appoint{
+        font-size: $typo-sz-sm;
+        font-weight: bold;
+        @include radius(25px);
+    }
+
+    &-accept{
+        color: $color-pm;
+        font-size: $typo-sz-sm;
+    }
+
+    &-dotseparator{
+        font-size: 4px;
+    }
+
+    &-practice{
+
+        & > span{
+            vertical-align: middle;
+        }
+
+        &-item{
+            margin-bottom: 32px;
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+        &-location{
+            font-size: 14px;
+            line-height: 1.4;
+            display: block;
+        }
+
+        &-meta{
+            font-size: $typo-sz-sm;
+            
+            li{
+                line-height: 1.75;
+            }
+        }
+    }
+}

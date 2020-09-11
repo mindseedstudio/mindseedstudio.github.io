@@ -1,0 +1,21 @@
+@import 'modules/partials/colors';
+@import 'modules/partials/mixin';
+@import 'modules/partials/typo';
+@import 'modules/partials/spacing';
+@import 'modules/partials/heading';
+//Modules
+@import 'modules/common';
+@import 'modules/alert';
+@import 'modules/forms';
+@import 'modules/card';
+@import 'modules/tab';
+@import 'modules/nav';
+@import 'modules/table';
+@import 'modules/modal';
+
+//Site Module
+@import 'modules/site';
+@import 'modules/profile';
+
+//Dashboard Module
+@import 'modules/dash';

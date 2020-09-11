@@ -1,0 +1,7 @@
+$card: '.card';
+
+#{$card}{
+    @include radius(0);
+    border: none;
+    @include shadow(0 0 7px 0 rgba(0,0,0,0.07));
+}

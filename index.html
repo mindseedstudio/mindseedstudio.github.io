@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="sass/main.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card spc-pd-24 spc-mtb-32">
+            <h3 class="h4">Headings</h3> 
+            <div>
+                <h1 class="h1">SF UI DISPLAY AaBbCcDdEeFf</h1>
+                <h1 class="h1 h-light">SF UI DISPLAY AaBbCcDdEeFf</h1>
+                <h2 class="h2">SF UI DISPLAY AaBbCcDdEeFf</h2>
+                <h2 class="h2 h-light">SF UI DISPLAY AaBbCcDdEeFf</h2>
+                <h3 class="h3">SF UI DISPLAY AaBbCcDdEeFf</h3>
+                <h3 class="h3 h-light">SF UI DISPLAY AaBbCcDdEeFf</h3>
+                <h4 class="h4">SF UI DISPLAY AaBbCcDdEeFf</h4>
+                <h4 class="h4 h-light">SF UI DISPLAY AaBbCcDdEeFf</h4>
+            </div>    
+         </div>
+         <div class="card spc-pd-24 spc-mtb-32">
+            <h3 class="h4">Tables</h3> 
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Full Name</th>
+                        <th scope="col">Email Address</th>
+                        <th scope="col" class="text-right"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>
+                            <ul class="table-actions d-flex align-items-center justify-content-end">
+                                <li>
+                                    <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
+                                        <i class="fa fa-redo"></i>
+                                    </a>
+                                </li>
+                                <li data-toggle="modal" data-target="#deleteModal">
+                                    <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                        <i class="fa fa-minus-circle"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>
+                            <ul class="table-actions d-flex align-items-center justify-content-end">
+                                <li>
+                                    <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
+                                        <i class="fa fa-redo"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                        <i class="fa fa-minus-circle"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>
+                            <ul class="table-actions d-flex align-items-center justify-content-end">
+                                <li>
+                                    <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
+                                        <i class="fa fa-redo"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                        <i class="fa fa-minus-circle"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>    
+         </div>
+        <div class="card spc-pd-24 spc-mtb-32">
+            <h3 class="h4">Alerts</h3>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="alert alert-primary" role="alert">
+                A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+            <div class="alert alert-success" role="alert">
+                A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+              </div>
+              <div class="alert alert-danger" role="alert">
+                A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+              </div>
+              <div class="alert alert-warning" role="alert">
+                A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+              </div>
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                <hr>
+                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <div class="card spc-pd-24 spc-mtb-32">
+            <h3 class="h4">Sign Up Page</h3>
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control  is-valid">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control is-invalid">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Example select</label>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Example file input</label>
+                    <input type="file" class="form-control-file">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Read Only</label>
+                    <input type="text" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Disabled</label>
+                    <input type="text" class="form-control" disabled>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Description</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Default checkbox
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          Default radio
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          Default radio
+                        </label>
+                      </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Field Size</label>
+
+                    <input class="form-control spc-mb-24 form-control-lg" type="text" placeholder=".form-control-lg">
+                    
+                    <input class="form-control spc-mb-24" type="text" placeholder="Default input">
+                    
+                    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Primary Buttons</label>
+                    <button class="btn btn-lg btn-primary" type="button">Submit Large</button>
+                    <button class="btn btn-primary" type="button">Submit</button>
+                    <button class="btn btn-sm btn-primary" type="button">Submit Small</button>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Secondary Buttons</label>
+                    <button class="btn btn-lg btn-secondary" type="button">Submit Large</button>
+                    <button class="btn btn-secondary" type="button">Submit</button>
+                    <button class="btn btn-sm btn-secondary" type="button">Submit Small</button>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Other Buttons</label>
+                    <button class="btn btn-lg btn-success" type="button">Success/Green</button>
+                    <button class="btn btn-lg btn-danger" type="button">Danger/Red</button>
+                    <button class="btn btn-lg btn-warning" type="button">Warning/Yellow</button>
+                    <button class="btn btn-lg btn-light" type="button">Light</button>
+                    <button class="btn btn-lg btn-dark" type="button">Dark</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-delete">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title h-light">You are about to delete...</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center">
+                        <div class="modal-icon">
+                            <i class="fa fa-trash-alt"></i>
+                        </div>
+                        <div class="modal-message">
+                            <p>Are you sure you want to delete {{Something goes here}}?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger btn-lg">Yes, I am sure!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            })
+    </script>
+</body>
+</html>

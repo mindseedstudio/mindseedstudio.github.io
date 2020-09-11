@@ -1,0 +1,62 @@
+@mixin radius($v){
+    -webkit-border-radius: $v;
+    -moz-border-radius: $v;
+    border-radius: $v;
+}
+
+@mixin appearance($v){
+    -webkit-appearance: $v; /* WebKit */
+    -moz-appearance: $v; /* Mozilla */
+    appearance: $v; 
+}
+
+@mixin shadow($v, $t:'box'){
+    @if($t == 'text'){
+        -webkit-text-shadow: $v;
+        -moz-text-shadow: $v;
+        text-shadow: $v;
+    }@else{
+        -webkit-box-shadow: $v;
+        -moz-box-shadow: $v;
+        box-shadow: $v;
+    }
+}
+
+@mixin transition($v){
+    -webkit-transition:#{$v};
+    -moz-transition: #{$v};
+    transition: #{$v};
+}
+
+@mixin size($v, $h:""){
+   @if($h == "h"){
+       height: $v;
+   }@else if($h == "w"){
+        width: $v;
+   }@else{
+       width: $v;
+       height: $v;
+   }
+}
+
+@mixin min-size($v, $h:""){
+    @if($h == "h"){
+        min-height: $v;
+    }@else if($h == "w"){
+        min-width: $v;
+    }@else{
+        min-width: $v;
+        min-height: $v;
+    }
+}
+
+@mixin max-size($v, $h:""){
+    @if($h == "h"){
+        max-height: $v;
+    }@else if($h == "w"){
+        max-width: $v;
+    }@else{
+        max-width: $v;
+        max-height: $v;
+    }
+}
