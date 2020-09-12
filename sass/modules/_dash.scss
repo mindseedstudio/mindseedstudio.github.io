@@ -52,6 +52,7 @@ $dash: '.dash';
     }
 
     &-header{
+        
         height: 82px;
         padding: 0 #{$spc-32}px;
     }
@@ -61,19 +62,22 @@ $dash: '.dash';
     }
 
     &-main{
-        @include transition(padding-left 0.33s);
+        @include transition(left 0.33s);
+        position: relative;
+        left: 0;
 
         .dash-header{
+            background-color: #fff;
             @include shadow(0px 0px 2px 2px rgba(0,0,0,0.1));
         }    
 
         @media screen and (min-width: 1200px){
             @include transition(none);
-            padding-left: 240px;
+            left: 240px;
         }
 
         &.menu-shown{
-            padding-left: 240px;
+            left: 240px;
         }
     }
 
