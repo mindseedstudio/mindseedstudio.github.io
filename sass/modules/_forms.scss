@@ -64,6 +64,9 @@ $form : '.form';
                 line-height: 1.25;
                 background-color: $color-gr-lt;
                 @include transition(background-color 0.33s);
+                @media screen and (max-width: 576px){
+                    font-size: 14px;
+                }
 
                 &:hover{
                     background-color: $color-gr-md;
@@ -77,6 +80,10 @@ $form : '.form';
                     strong{
                         display: block;
                         font-size: $typo-sz-md;
+
+                        @media screen and (max-width: 576px){
+                            font-size: 14px;
+                        }
                     }
                 }
             }

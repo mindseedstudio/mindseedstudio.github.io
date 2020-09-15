@@ -19,7 +19,7 @@
                         </a>
                     </header>
                     <div class="row align-items-center">
-                        <div class="col-sm-12 col-md-6">
+                        <div class="col-sm-12 col-lg-6">
                             <h2 class="h2 card-title spc-mb-56">Make better health choices!</h2>
                             <form>
                                 <div class="form-group spc-mb-32">
@@ -29,16 +29,34 @@
                                     <input type="text" class="form-control" placeholder="Your password...">
                                 </div>
                                 <div class="button-group spc-mb-32">
-                                    <button class="btn btn-primary spc-ptb-16 spc-plr-56">Log In</button>
-                                    <a href="#" class="btn-link spc-ml-16 text-danger">Forgot Password?</a>
+                                    <button class="btn btn-primary spc-ptb-16 spc-plr-56 mb-md-0 mb-3">Log In</button>
+                                    <a href="#" class="btn-link ml-md-2 text-danger d-md-inline-block d-block" data-toggle="modal" data-target="#regularModal">Forgot Password?</a>
                                 </div>
                                 <p>Don't have an account? <a href="signup.html" class="text-dark"><strong>Sign Up Now!!</strong></a></p>
                             </form>
                         </div>
-                        <div class="col-sm-12 col-md-5 offset-md-1">
+                        <div class="col-xs-12 col-lg-5 offset-md-1 d-none d-lg-block ">
                             <img src="images/account-photo.jpg" alt="Account Photo" class="img-fluid">
                         </div>
                     </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="regularModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-primary">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 class="h-light spc-mb-16">Forgot Password?</h3>
+                    <p class="text-sm">Enter the email address you to sign in to <strong>HealthAus</strong>. We will send you a link to reset your password.</p>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="emailprefix@emaildomain.com...">
+                    </div>
+                    <button type="button" class="btn btn-primary w-100 spc-mb-16">Send me a reset link</button>
+                    <div class="text-center">
+                        <span data-dismiss="modal" class="cursor-pointer">Close</span>
+                    </div>
                 </div>
             </div>
         </div>

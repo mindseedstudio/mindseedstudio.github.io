@@ -67,3 +67,20 @@ a{
 .copyright{
     font-size: 12px;
 }
+
+$text: '.text';
+#{$text}{
+    &-sm{
+        font-size: 12px;
+        color: darken($color-gr-dk, 31%);
+        line-height: $typo-lh-sm;
+        
+    }
+}
+
+$cursor: '.cursor';
+#{$cursor}{
+    &-pointer{
+        cursor: pointer;
+    }
+}

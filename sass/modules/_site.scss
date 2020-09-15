@@ -62,4 +62,26 @@ $site: '.site';
            }
        }
    }
+
+   //Thank You Page
+   &-thankyou{
+       position: relative;
+
+       &:before, &:after{
+            position: absolute;
+            content: '';
+            top: 0;
+            width: 50%;
+            height: 100%;
+       }
+
+       &:before{
+           left: 0;
+           background: $color-pm;
+       }
+
+       &:after{
+           right: 0;
+       }
+   }
 }
