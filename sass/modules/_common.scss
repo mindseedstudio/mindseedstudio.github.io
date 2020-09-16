@@ -5,6 +5,7 @@ body{
     letter-spacing: 0.5px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
     
     &.bg{
         background-color: $color-gr-lt;

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration :: Hospital List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="sass/main.min.css">
+</head>
+<body>
+    <aside class="dash-sidebar">
+        <header class="dash-header dash-logo d-flex align-items-center">
+            <img src="images/logo_wh.png" alt="Health Aus Logo" width="160" class="img-fluid"> 
+        </header>
+        <nav class="dash-sidebar-nav">
+            <ul>
+                <li class="active">
+                    <a href="#"><i class="fa fa-user-edit spc-pr-16"></i>Users</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-stethoscope spc-pr-16"></i>Appointments</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-hospital spc-pr-16"></i>Hospitals</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user-nurse spc-pr-16"></i>Specialities</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-x-ray spc-pr-16"></i>Practice Areas</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-file-alt spc-pr-16"></i>Pages</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-star spc-pr-16"></i>Reviews</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user-cog spc-pr-16"></i>Profile Settings</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="dash-main">
+        <header class="dash-header d-flex align-items-center justify-content-between justify-content-xl-end">
+            <a href="#" class="dash-menu d-block d-xl-none">
+                <i class="fa fa-bars"></i><span>Menu</span>
+            </a>
+            <a href="#" class="dash-logout">
+                <i class="fa fa-sign-out-alt spc-mr-8"></i>
+                Log Out
+            </a>
+        </header>
+        <section class="dash-content">
+            <header class="dash-content-header">
+                <h3 class="h-light h3">Hospitals</h3>
+            </header>
+            <div class="dash-content-main card spc-pd-24">
+                <div class="table-responsive">
+                    <div class="d-flex justify-content-between align-items-center table-filter">
+                        <div class="table-search">
+                            <i class="fa fa-search"></i>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <div class="table-sort">
+                            <span>Show:</span>
+                            <select>
+                                <option value="10">10</option>
+                                <option value="10">20</option>
+                                <option value="10">30</option>
+                                <option value="10">50</option>
+                            </select>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col" class="text-right"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Mark Otto Van Clatenberg</td>
+                            <td>markotto@hotmail.com</td>
+                            <td>
+                                <ul class="table-actions d-flex align-items-center justify-content-end">
+                                    <li>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
+                                            <i class="fa fa-redo"></i>
+                                        </a>
+                                    </li>
+                                    <li data-toggle="modal" data-target="#deleteModal">
+                                        <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                            <i class="fa fa-minus-circle"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Jacob McClean Brown</td>
+                            <td>jmcbrown@gmail.com</td>
+                            <td>
+                                <ul class="table-actions d-flex align-items-center justify-content-end">
+                                    <li>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
+                                            <i class="fa fa-redo"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                            <i class="fa fa-minus-circle"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Larry Seagulus</td>
+                            <td>larrythesea@gmail.com</td>
+                            <td>
+                                <ul class="table-actions d-flex align-items-center justify-content-end">
+                                    <li>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
+                                            <i class="fa fa-redo"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                            <i class="fa fa-minus-circle"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>Justin Induslegus</td>
+                            <td>jiistheman@gmail.com</td>
+                            <td>
+                                <ul class="table-actions d-flex align-items-center justify-content-end">
+                                    <li>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
+                                            <i class="fa fa-redo"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                            <i class="fa fa-minus-circle"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>Stevenson Rogers</td>
+                            <td>rogerthatsteve@hotmail.com</td>
+                            <td>
+                                <ul class="table-actions d-flex align-items-center justify-content-end">
+                                    <li>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
+                                            <i class="fa fa-redo"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                            <i class="fa fa-minus-circle"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>Tony Iron Stark</td>
+                            <td>iamironman@hotmail.com</td>
+                            <td>
+                                <ul class="table-actions d-flex align-items-center justify-content-end">
+                                    <li>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
+                                            <i class="fa fa-redo"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
+                                            <i class="fa fa-minus-circle"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-paginate spc-mt-24 d-flex justify-content-end">
+                    <nav>
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+            <footer class="dash-footer spc-mt-24">
+                <p class="text-center no-mar">&copy; 2020. All Rights Reserved.</p>
+            </footer>
+        </section>
+    </main>
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-delete">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title h-light">You are about to delete...</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center">
+                        <div class="modal-icon">
+                            <i class="fa fa-trash-alt"></i>
+                        </div>
+                        <div class="modal-message">
+                            <p>Are you sure you want to delete {{Something goes here}}?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger btn-lg">Yes, I am sure!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        //Include this when there is a table
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+        //Only on Dashboard
+        let menu = document.querySelector('.dash-menu');
+        let side = document.querySelector('.dash-sidebar');
+        let main = document.querySelector('.dash-main');
+        menu.addEventListener('click', e=>{
+            e.preventDefault();
+            side.classList.toggle('show');
+            main.classList.toggle('menu-shown');
+
+        });
+    </script>
+</body>
+</html>
