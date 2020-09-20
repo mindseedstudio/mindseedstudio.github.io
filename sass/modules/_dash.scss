@@ -72,6 +72,8 @@ $dash: '.dash';
         @include transition(left 0.33s);
         position: relative;
         left: 0;
+        background: $color-gr-lt;
+        min-height: 100%;
         
         .dash-header{
             background-color: #fff;
@@ -81,7 +83,7 @@ $dash: '.dash';
         @media screen and (min-width: 1200px){
             @include transition(none);
             padding-left: 240px;
-            left: 0;
+            left: 0!important;
         }
 
         &.menu-shown{
@@ -98,12 +100,10 @@ $dash: '.dash';
         &:hover{
             color: darken($color-rd, 8%);
         }
-
     }
 
     &-content{
         padding: #{$spc-24}px #{$spc-32}px;
-        background: $color-gr-lt;
     }
 
     &-footer{

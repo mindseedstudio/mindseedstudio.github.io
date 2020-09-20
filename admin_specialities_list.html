@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administration :: User List</title>
+    <title>Administration :: Specialist List</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="sass/main.min.css">
@@ -15,16 +15,16 @@
         </header>
         <nav class="dash-sidebar-nav">
             <ul>
-                <li class="active">
-                    <a href="admin_userlist.html"><i class="fa fa-user-edit spc-pr-16"></i>Users</a>
+                <li>
+                    <a href="#"><i class="fa fa-user-edit spc-pr-16"></i>Users</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-stethoscope spc-pr-16"></i>Appointments</a>
                 </li>
                 <li>
-                    <a href="admin_hospital_list.html"><i class="fa fa-hospital spc-pr-16"></i>Hospitals</a>
+                    <a href="#"><i class="fa fa-hospital spc-pr-16"></i>Hospitals</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="admin_specialities_list.html"><i class="fa fa-user-nurse spc-pr-16"></i>Specialities</a>
                 </li>
                 <li>
@@ -53,8 +53,9 @@
             </a>
         </header>
         <section class="dash-content">
-            <header class="dash-content-header">
-                <h3 class="h-light h3">Users</h3>
+            <header class="dash-content-header spc-mb-24 d-flex justify-content-between align-items-center">
+                <h3 class="h-light h3 no-mar">Specialization</h3>
+                <a href="admin_addedit_specialization.html" class="btn btn-sm btn-primary"><i class="fa fa-plus spc-mr-8 text-sm text-light"></i>Add New</a>
             </header>
             <div class="dash-content-main card spc-pd-24">
                 <div class="table-responsive">
@@ -76,22 +77,20 @@
                     <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Full Name</th>
-                            <th scope="col">Email Address</th>
+                            <th scope="col" width="35">#</th>
+                            <th scope="col">Hospital Name</th>
                             <th scope="col" class="text-right"></th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td>Mark Otto Van Clatenberg</td>
-                            <td>markotto@hotmail.com</td>
+                            <td>Holdsworth House Medical Practice</td>
                             <td>
                                 <ul class="table-actions d-flex align-items-center justify-content-end">
                                     <li>
-                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
-                                            <i class="fa fa-redo"></i>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Edit Details">
+                                            <i class="fa fa-edit"></i>
                                         </a>
                                     </li>
                                     <li data-toggle="modal" data-target="#deleteModal">
@@ -104,16 +103,15 @@
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td>Jacob McClean Brown</td>
-                            <td>jmcbrown@gmail.com</td>
+                            <td>Drummoyne Dermatology</td>
                             <td>
                                 <ul class="table-actions d-flex align-items-center justify-content-end">
                                     <li>
-                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
-                                            <i class="fa fa-redo"></i>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Edit Details">
+                                            <i class="fa fa-edit"></i>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li data-toggle="modal" data-target="#deleteModal">
                                         <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
                                             <i class="fa fa-minus-circle"></i>
                                         </a>
@@ -123,16 +121,15 @@
                           </tr>
                           <tr>
                             <td>3</td>
-                            <td>Larry Seagulus</td>
-                            <td>larrythesea@gmail.com</td>
+                            <td>Sydney Dermatology Group</td>
                             <td>
                                 <ul class="table-actions d-flex align-items-center justify-content-end">
                                     <li>
-                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
-                                            <i class="fa fa-redo"></i>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Edit Details">
+                                            <i class="fa fa-edit"></i>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li data-toggle="modal" data-target="#deleteModal">
                                         <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
                                             <i class="fa fa-minus-circle"></i>
                                         </a>
@@ -142,16 +139,15 @@
                           </tr>
                           <tr>
                             <td>4</td>
-                            <td>Justin Induslegus</td>
-                            <td>jiistheman@gmail.com</td>
+                            <td>Forestville Specialist Medical Centre</td>
                             <td>
                                 <ul class="table-actions d-flex align-items-center justify-content-end">
                                     <li>
-                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
-                                            <i class="fa fa-redo"></i>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Edit Details">
+                                            <i class="fa fa-edit"></i>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li data-toggle="modal" data-target="#deleteModal">
                                         <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
                                             <i class="fa fa-minus-circle"></i>
                                         </a>
@@ -161,16 +157,15 @@
                           </tr>
                           <tr>
                             <td>5</td>
-                            <td>Stevenson Rogers</td>
-                            <td>rogerthatsteve@hotmail.com</td>
+                            <td>Chatswood Central Dermatology</td>
                             <td>
                                 <ul class="table-actions d-flex align-items-center justify-content-end">
                                     <li>
-                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
-                                            <i class="fa fa-redo"></i>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Edit Details">
+                                            <i class="fa fa-edit"></i>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li data-toggle="modal" data-target="#deleteModal">
                                         <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
                                             <i class="fa fa-minus-circle"></i>
                                         </a>
@@ -180,16 +175,15 @@
                           </tr>
                           <tr>
                             <td>6</td>
-                            <td>Tony Iron Stark</td>
-                            <td>iamironman@hotmail.com</td>
+                            <td>Northern Beaches Dermatology</td>
                             <td>
                                 <ul class="table-actions d-flex align-items-center justify-content-end">
                                     <li>
-                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Reset Password">
-                                            <i class="fa fa-redo"></i>
+                                        <a href="#" class="text-primary" data-toggle="tooltip" data-placement="left" title="Edit Details">
+                                            <i class="fa fa-edit"></i>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li data-toggle="modal" data-target="#deleteModal">
                                         <a href="#" class="text-danger" data-toggle="tooltip" data-placement="left" title="Delete">
                                             <i class="fa fa-minus-circle"></i>
                                         </a>
