@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="sass/main.min.css">
+</head>
+<body>
+    <aside class="dash-sidebar">
+        <header class="dash-header dash-logo d-flex align-items-center">
+            <img src="images/logo_wh.png" alt="Health Aus Logo" width="160" class="img-fluid"> 
+        </header>
+        <nav class="dash-sidebar-nav">
+            <ul>
+                <li class="active">
+                    <a href="doctor_editprofile.html"><i class="fa fa-user-edit spc-pr-16"></i>Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-stethoscope spc-pr-16"></i>Appointments</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-star spc-pr-16"></i>Reviews</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user-cog spc-pr-16"></i>Profile Settings</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="dash-main">
+        <header class="dash-header d-flex align-items-center justify-content-between justify-content-xl-end">
+            <a href="#" class="dash-menu d-block d-xl-none">
+                <i class="fa fa-bars"></i><span>Menu</span>
+            </a>
+            <a href="#" class="dash-logout">
+                <i class="fa fa-sign-out-alt spc-mr-8"></i>
+                Log Out
+            </a>
+        </header>
+        <section class="dash-content">
+            <div class="dash-content-main">
+                <form>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-9">
+                            <div class="card spc-pd-24">
+                                <div class="dash-profileexpertises">
+                                    <h4>Areas of Expertise</h4>
+                                    <div class="form-group">
+                                        <label class="form-label">Speciality</label>
+                                        <input type="text" list="speciality" class="form-control" placeholder="eg. Gynocologist">
+                                        <datalist id="speciality">
+                                            <option value="Gynocologist">
+                                            <option value="Orthopologist">
+                                            <option value="General Surgeon">
+                                            <option value="Diabetic">
+                                            <option value="Eye Surgery">
+                                            <option value="Nose Surgery">
+                                        </datalist>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Practice Areas</label>
+                                        <p class="text-sm">Select all the area of practice you qualify for</p>
+                                        <div class="dash-profilemulti">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" placeholder="Search...">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="dash-multiselect">
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="dash-multiselectlist">
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-danger">
+                                                                        <i class="fa fa-minus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-danger">
+                                                                        <i class="fa fa-minus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-danger">
+                                                                        <i class="fa fa-minus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Special Interests</label>
+                                        <p class="text-sm">Breifly highlight your areas of clinical focus</p>
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="dash-profileprofessional">
+                                    <h4>Professional Details</h4>
+                                    <div class="form-group">
+                                        <label class="form-label">Qualifications Title</label>
+                                        <p class="text-sm">This will appear next to your name at top of your profile</p>
+                                        <input type="text" class="form-control" placeholder="eg. MBBS, MD....">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Registration Numbers</label>
+                                        <p class="text-sm">List all registration numbers and professional association memberships</p>
+                                        <textarea class="form-control" placeholder="MED02210001110"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Hospital Affiliations</label>
+                                        <p class="text-sm">Please select any hopsitals that you are affiliated with</p>
+                                        <div class="dash-profilemulti">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" placeholder="Search...">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="dash-multiselect">
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="dash-multiselectlist">
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-danger">
+                                                                        <i class="fa fa-minus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-danger">
+                                                                        <i class="fa fa-minus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-danger">
+                                                                        <i class="fa fa-minus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="dash-profileabout">
+                                    <h4 class="h4">About You</h4>
+                                    <div class="form-group">
+                                        <label class="form-label">Gender</label>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="genunknown" value="unknown" selected>
+                                            <label class="form-check-label" for="genunknown">
+                                            Unknown
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="genmale" value="male">
+                                            <label class="form-check-label" for="genmale">
+                                            Male
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="genfemale" value="female">
+                                            <label class="form-check-label" for="genfemale">
+                                            Female
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="genother" value="other">
+                                            <label class="form-check-label" for="genother">
+                                            Other
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Biography</label>
+                                        <p class="text-sm">Tell about yourself to your prospect patient and other fellow health professionals.</p>
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Languages</label>
+                                        <p class="text-sm">Please select any languages spoken other than English</p>
+                                        <div class="dash-profilemulti">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" placeholder="Search...">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="dash-multiselect">
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-primary">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="dash-multiselectlist">
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-danger">
+                                                                        <i class="fa fa-minus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-danger">
+                                                                        <i class="fa fa-minus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div class="dash-list">
+                                                                    <p>Aboriginal and Torres Strait people</p>
+                                                                </div>
+                                                                <div class="dash-btn">
+                                                                    <button type="button" class="btn btn-sm btn-danger">
+                                                                        <i class="fa fa-minus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 mt-4 mt-md-0">
+                            <div class="card spc-pd-24 sticky-top">
+                                <div class="form-group">
+                                    <div class="dash-profileavatar">
+                                        <figure>
+                                            <img src="https://via.placeholder.com/150" class="img-fluid" alt="Name">
+                                        </figure>
+                                        <label for="profile-avatar">
+                                            <span><i class="fa fa-pencil-alt"></i></span>
+                                        </label>
+                                </div>
+                                    <input type="file" id="profile-avatar" hidden>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="dash-profileinfo">
+                                        <select class="form-control dash-profilesalut">
+                                            <option value="Dr">Dr</option>
+                                            <option value="Dr">Mr</option>
+                                            <option value="Dr">Ms</option>
+                                            <option value="Dr">Prof</option>
+                                        </select>
+                                        <input type="text" class="form-control" placeholder="Kamlesh Shrestha" >
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Save Profile</button>
+                                <a href="#" class="text-danger d-block text-center spc-mt-16">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <footer class="dash-footer spc-mt-24">
+                <p class="text-center no-mar">&copy; 2020. All Rights Reserved.</p>
+            </footer>
+        </section>
+    </main>
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-delete">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title h-light">You are about to delete...</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center">
+                        <div class="modal-icon">
+                            <i class="fa fa-trash-alt"></i>
+                        </div>
+                        <div class="modal-message">
+                            <p>Are you sure you want to delete {{Something goes here}}?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-light btn-lg" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger btn-lg">Yes, I am sure!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        //Include this when there is a table
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+        //Only on Dashboard
+        let menu = document.querySelector('.dash-menu');
+        let side = document.querySelector('.dash-sidebar');
+        let main = document.querySelector('.dash-main');
+        menu.addEventListener('click', e=>{
+            e.preventDefault();
+            side.classList.toggle('show');
+            main.classList.toggle('menu-shown');
+
+        });
+    </script>
+</body>
+</html>

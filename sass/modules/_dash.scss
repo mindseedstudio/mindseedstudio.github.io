@@ -130,5 +130,91 @@ $dash: '.dash';
             }
         }
     }
+
+    &-profileavatar{
+        position: relative;
+        
+
+        figure{
+            margin: 0 auto;
+            overflow: hidden;
+            @include max-size(150px);
+            @include radius(50%);
+        }
+
+        label{
+            background-color: rgba(0,0,0,0.6);
+            position: absolute;
+            margin: auto;
+            @include size(36px);
+            @include radius(50%);
+            z-index: 10;
+            line-height: 36px;
+            bottom: -12px;
+            right: 0;
+            left: 0;
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            @include transition(background-color 0.33s);
+
+            &:hover{
+                background-color: rgba(0,0,0,0.7);
+            }
+
+            i{
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &-profilesalut{
+        width: 70px;
+        margin: auto;
+        margin-bottom: #{$spc-8}px;
+    }
+
+    &-multiselect{
+        height: 215px;
+        overflow-y: auto;
+        border: 1px solid $color-gr-md;
+
+        li{
+            padding: 10px;
+
+            &:nth-child(2n){
+                background-color: $color-gr-md;
+            }
+
+            p{
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &-multiselectlist{
+        height: 215px;
+        overflow-y: auto;
+
+        li{
+            padding: #{$spc-8}px;
+            background-color: lighten($color-pm, 42%);
+            margin-bottom: 4px;
+
+            p{
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &-list{
+        padding-right: 10px;
+    }
+   
     
 }

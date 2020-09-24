@@ -95,6 +95,13 @@ $form : '.form';
             
         }
     }
+
+    &-invisible{
+        .form-control{
+            border: none;
+            background: transparent;
+        }
+    }
 }
 
 textarea.form-control{
