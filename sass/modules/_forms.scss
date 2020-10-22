@@ -19,7 +19,7 @@ $form : '.form';
         //Size Matters
         &-lg{
             height: 54px;
-            padding: #{$spc-16}px 10px;
+            padding: 5px 10px;
             font-size: $typo-sz-md;
         }
 
@@ -115,6 +115,8 @@ $btn: '.btn';
     border: none;
     padding: 0 calc(#{$spc-24}px*1.25);
     height: 48px;
+    position: relative;
+    overflow: hidden;
     @include radius(4px);
     
     &-round{
@@ -200,4 +202,63 @@ $btn: '.btn';
         @include radius(0);
         text-align: left;
     }
+}
+
+//Tags Input
+
+.tags-input 
+{
+    overflow:hidden;
+}
+
+.tags-input li
+{
+  	float:left;
+}
+
+.tags
+{
+  	background: $color-gn;
+  	padding: 5px 40px 5px 10px;
+  	border-radius: 4px;
+    margin-right: 5px;
+    height: 42px;
+    line-height: 32px;
+    position: relative;
+    color: #fff;
+}
+
+.tags i
+{
+	position: absolute; 
+	right:10px;
+	top: 16px;
+	width: 10px;
+	height: 10px;
+	content:'';
+    cursor:pointer;
+    color: $color-gn-dark;
+	opacity: .7;
+    font-size: 14px;
+    @include transition(opacity 0.33s);
+}
+
+.tags i:hover
+{
+	opacity: 1;
+}
+
+.tags-new input[type="text"]
+{
+    border:0;
+    margin: 0;
+	font-size: 16px;
+    background:transparent;
+    height: 42px;
+    line-height: 42px;
+}
+
+.tags-new input[type="text"]:focus
+{
+  	outline:none; 
 }

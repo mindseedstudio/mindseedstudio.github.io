@@ -33,7 +33,7 @@
             </header>
             <section class="d-flex justify-content-end site-hero-formspc">
                 <div class="site-hero-form">
-                    <h1 class="h-white h-reg spc-mb-8">It’s easy to make an<br/>appointment in Medico</h1>
+                    <h1 class="h-white spc-mb-8">It’s easy to make an<br/>appointment in Medico</h1>
                     <h6 class="h-white h-reg spc-mb-16">Let’s get started with the basic things</h6>
                     <div class="site-hero-formbox">
                         <form>
@@ -44,13 +44,25 @@
                             <div class="form-group">
                                 <h4 class="spc-mb-8">What is problem is the patient experiencing?</h4>
                                 <h6 class="h-light">You can select multiple conditions</h6>
-                                <input type="text" class="form-control form-control-lg" placeholder="i.e. Martin Tyler">
+                                <div class="form-control form-control-lg">
+                                    <ul class="tags-input">
+                                        <li class="tags">Fever<i class="fa fa-times"></i></li>
+                                        <li class="tags-new">
+                                        <input type="text"> 
+                                        </li>
+                                    </ul>  
+                                </div>
+                                <!-- <input type="text" class="form-control form-control-lg" placeholder="i.e. Martin Tyler"> -->
                             </div>
                             <div class="form-group">
                                 <h4>What is the patient located?</h4>
                                 <input type="text" class="form-control form-control-lg" placeholder="i.e. Martin Tyler">
                             </div>
-                            <button class="btn btn-primary btn-lg btn-finddoc">Lets start finding a doctor now</button>
+                            <button class="btn btn-primary btn-lg btn-finddoc" type="button">
+                                <span class="d-flex align-items-center justify-content-between"> 
+                                    <span>Lets start finding a doctor now</span><i class="fa fa-angle-right"></i>
+                                </span>                                
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -61,5 +73,52 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function existingTag(text)
+        {
+            var existing = false,
+                text = text.toLowerCase();
+
+            $(".tags").each(function(){
+                if ($(this).text().toLowerCase() == text) 
+                {
+                    existing = true;
+                    return "";
+                }
+            });
+
+            return existing;
+        }
+
+        $(function(){
+        $(".tags-new input").focus();
+        
+        $(".tags-new input").keyup(function(){
+
+                var tag = $(this).val().trim(),
+                length = tag.length;
+
+                if((tag.charAt(length - 1) == ',') && (tag != ","))
+                {
+                    tag = tag.substring(0, length - 1);
+
+                    if(!existingTag(tag))
+                    {
+                        $('<li class="tags"><span>' + tag + '</span><i class="fa fa-times"></i></i></li>').insertBefore($(".tags-new"));
+                        $(this).val("");	
+                    }
+                    else
+                    {
+                        $(this).val(tag);
+                    }
+                }
+            });
+        
+        $(document).on("click", ".tags i", function(){
+            $(this).parent("li").remove();
+        });
+        });
+                                        
+    </script>
 </body>
 </html>
