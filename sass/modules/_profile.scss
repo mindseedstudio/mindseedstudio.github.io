@@ -57,4 +57,57 @@ $profile: '.profile';
             }
         }
     }
+
+    //Star Ratings
+
+    &-starone{
+        svg:nth-child(1){
+            color: $color-yl;
+        }
+    }
+
+    &-startwo{
+        svg:nth-child(1), svg:nth-child(2){
+            color: $color-yl;
+        }
+    }
+
+    &-starthree{
+        svg:nth-child(1), svg:nth-child(2), svg:nth-child(3){
+            color: $color-yl;
+        }
+    }
+
+    &-starfour{
+        svg:nth-child(1), svg:nth-child(2), svg:nth-child(3), svg:nth-child(4){
+            color: $color-yl;
+        }
+    }
+
+    &-starfive{
+        svg:nth-child(1), svg:nth-child(2), svg:nth-child(3), svg:nth-child(4), svg:nth-child(5){
+            color: $color-yl;
+        }
+    }
+
+    //Practitioner
+    &-practitionerimage{
+        @include size(80px);
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    &-practitionername{
+        h4{
+            a{
+                color: darken($color-gr-dk, 50%);
+                text-decoration: none;
+                @include transition(color 0.33s);
+
+                &:hover{
+                    color:  darken($color-gr-dk, 70%);
+                }
+            }
+        }
+    }
 }

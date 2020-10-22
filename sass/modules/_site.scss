@@ -1,6 +1,59 @@
 $site: '.site';
 
 #{$site}{
+
+    &-hero{
+        background: url('../images/hero-image.png') no-repeat center left;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+
+        &-overlay{
+            position: absolute;
+            top:0;
+            left: 0;
+            mix-blend-mode: multiply;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(60, 59, 59, 0.46) 67%, #2b2929);
+            @include size(100%);
+            z-index: 1;
+        }
+
+        &-spacing{
+            padding: calc(#{$spc-48}px*0.625) calc(#{$spc-48}px*1.25);
+            position: relative;
+            z-index: 10;
+        }
+
+        &-formspc{
+            // padding-top: calc(#{$spc-48}px*3.5);
+            padding-top: 7%;
+        }
+
+        &-form{
+            width: 100%;
+            max-width: 535px;
+        }
+
+        &-formbox{
+            padding: 30px;
+            padding-bottom: 0;
+            background: #fff;
+            
+            @include radius(4px);
+        }
+
+        .site-nav{
+            li{
+                padding:0 20px;
+
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
    &-header{
        padding: #{$spc-16}px 0;
        position: relative;
@@ -10,7 +63,6 @@ $site: '.site';
 
    &-nav{
        padding-left: #{$spc-24}px;
-
 
        li{
            padding: 0 #{$spc-8}px;

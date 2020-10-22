@@ -18,8 +18,9 @@ $form : '.form';
 
         //Size Matters
         &-lg{
-            padding: #{$spc-16}px #{spc-8}px;
-            font-size: $typo-sz-lg;
+            height: 54px;
+            padding: #{$spc-16}px 10px;
+            font-size: $typo-sz-md;
         }
 
         &-sm{
@@ -110,11 +111,16 @@ textarea.form-control{
 
 $btn: '.btn';
 #{$btn}{
-    line-height: 1;
+    line-height: 3rem;
     border: none;
-    padding: 14px #{$spc-24}px;
+    padding: 0 calc(#{$spc-24}px*1.25);
+    height: 48px;
     @include radius(4px);
     
+    &-round{
+        @include radius(24px);
+    }
+
     //Button Type
     &-primary{
         background-color: $color-pm;
@@ -176,12 +182,22 @@ $btn: '.btn';
 
     //Size Matters
     &-lg{
-        padding: #{$spc-16}px #{$spc-32}px;
+        padding: #{$spc-16}px 30px;
         font-size: $typo-sz-lg;
+        height: 64px;
+        line-height: 2rem;
     }
 
     &-sm{
         padding: #{$spc-8}px #{$spc-16}px;
         font-size: $typo-sz-sm;
+    }
+
+    //Landing Page Btn
+    &-finddoc{
+        width: calc(100% + 60px);
+        margin-left: -30px;
+        @include radius(0);
+        text-align: left;
     }
 }

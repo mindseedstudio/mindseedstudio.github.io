@@ -1,6 +1,8 @@
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
-    font-family: $typo-family-bd;
-    margin-bottom: #{$spc-24}px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: #{$spc-16}px;
+    color: $color-heading;
 
     &.has-border{
         padding-bottom: #{$spc-8}px;
@@ -8,9 +10,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     }
 }
 
-.h-light{
-    font-family: $typo-family-lt;
+.h-white{
+    color: #fff!important;
 }
+
+.h-light{
+    font-weight: 300;
+}
+
+.h-reg{
+    font-weight: 400;
+}
+
+.h-bold{
+    font-weight: 700;
+}
+
 
 h1, .h1{
     font-size: $typo-sz-h1;
@@ -30,6 +45,7 @@ h3, .h3{
 h4, .h4{
     font-size: $typo-sz-h4;
     line-height: $typo-lh-h4;
+    font-weight: 400;
 }
 
 h5, .h5{
@@ -38,6 +54,7 @@ h5, .h5{
 }
 
 h6, .h6{
-    font-size: $typo-sz-sm;
-    line-height: $typo-lh-sm;
+    font-size: $typo-sz-md;
+    line-height: $typo-lh-md;
+    color: $color-subheading;
 }
