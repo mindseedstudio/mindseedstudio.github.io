@@ -4,10 +4,9 @@ html{
 }
 
 body{
-    font-family: $typo-family-lt;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     line-height: $typo-lh-md;
     font-size: $typo-sz-md;
-    letter-spacing: 0.5px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
