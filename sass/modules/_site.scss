@@ -38,8 +38,8 @@ $site: '.site';
         &-formbox{
             padding: 30px;
             padding-bottom: 0;
+            overflow: hidden;
             background: #fff;
-            
             @include radius(4px);
         }
 

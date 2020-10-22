@@ -1,19 +1,40 @@
 //Forms
 $form : '.form';
+
+::placeholder {
+    color: $color-pl!important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color-pl;
+}
+
+::-ms-input-placeholder { /* Edge */
+    color: $color-pl;
+}
+
+
+
 #{$form}{
     &-control{
         padding: #{$spc-8}px;
         font-size: $typo-sz-md;
-        border-color: $color-gr-md; 
+        border-color: $color-border; 
+        background-color: $color-in-bg;
         height: auto; 
         @include radius(0);
         @include appearance(auto);
+
         //Validation
         &.is-invalid, &.was-validated &:invalid{
             border-color: $color-rd;
         }
         &.is-valid, &.was-validated &:valid{
             border-color: $color-gn;
+        }
+
+        &:focus{
+            background-color: $color-in-bg;
         }
 
         //Size Matters
@@ -117,6 +138,7 @@ $btn: '.btn';
     height: 48px;
     position: relative;
     overflow: hidden;
+    @include transition(background 0.5s ease-in-out!important);
     @include radius(4px);
     
     &-round{
@@ -128,7 +150,7 @@ $btn: '.btn';
         background-color: $color-pm;
 
         &:hover{
-            background-color: darken($color-pm, 6%);
+            background-color: $color-pm-hov;
         }
     }
 
@@ -206,18 +228,15 @@ $btn: '.btn';
 
 //Tags Input
 
-.tags-input 
-{
-    overflow:hidden;
+.tags-input{
+    overflow: hidden;
 }
 
-.tags-input li
-{
-  	float:left;
+.tags-input li{
+  	float: left;
 }
 
-.tags
-{
+.tags{
   	background: $color-gn;
   	padding: 5px 40px 5px 10px;
   	border-radius: 4px;
@@ -228,8 +247,7 @@ $btn: '.btn';
     color: #fff;
 }
 
-.tags i
-{
+.tags i{
 	position: absolute; 
 	right:10px;
 	top: 16px;
@@ -243,13 +261,11 @@ $btn: '.btn';
     @include transition(opacity 0.33s);
 }
 
-.tags i:hover
-{
+.tags i:hover{
 	opacity: 1;
 }
 
-.tags-new input[type="text"]
-{
+.tags-new input[type="text"]{
     border:0;
     margin: 0;
 	font-size: 16px;
@@ -258,7 +274,32 @@ $btn: '.btn';
     line-height: 42px;
 }
 
-.tags-new input[type="text"]:focus
-{
+.tags-new input[type="text"]:focus{
   	outline:none; 
 }
+
+.btn .ripple {
+    display: block;
+    position: absolute;
+    background: $color-pm;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    margin-top: -150px;
+    transform: scale(0);
+    opacity: 0.4;
+    animation: effect-animation 1.6s;
+  }
+  .btn:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  @keyframes effect-animation {
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  

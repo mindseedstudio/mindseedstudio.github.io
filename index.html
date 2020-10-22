@@ -58,7 +58,7 @@
                                 <h4>What is the patient located?</h4>
                                 <input type="text" class="form-control form-control-lg" placeholder="i.e. Martin Tyler">
                             </div>
-                            <button class="btn btn-primary btn-lg btn-finddoc" type="button">
+                            <button class="btn btn-primary btn-lg btn-finddoc btn-effect" type="button">
                                 <span class="d-flex align-items-center justify-content-between"> 
                                     <span>Lets start finding a doctor now</span><i class="fa fa-angle-right"></i>
                                 </span>                                
@@ -118,7 +118,24 @@
             $(this).parent("li").remove();
         });
         });
-                                        
+
+        $(".btn-effect").on("click", function(e) {
+            e.preventDefault();
+
+            $(this).prepend('<span class="ripple"></span>');
+            
+            let $ripple = $(".ripple"),
+                offSet = $(this).offset(),
+                offSetY = e.pageY - offSet.top ,
+                offSetX = e.pageX - offSet.left;
+            
+            console.log(offSetY, offSetX);
+
+            $ripple.css({
+                top: offSetY,
+                left: offSetX
+            });
+        });                           
     </script>
 </body>
 </html>
