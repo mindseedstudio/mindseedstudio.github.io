@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medico :: Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass/main.min.css">
+</head>
+<body>
+    <main class="site-hero">
+        <div class="container-fluid site-hero-spacing">
+            <header class="site-header d-flex justify-content-between align-items-center no-shadow no-pad">
+                <a href="" class="logo">
+                    <img src="images/logo-medico.png" alt="Medico" width="117">
+                </a>
+                <nav class="site-nav">
+                    <ul class="d-flex align-items-center">
+                        <li>
+                            <a href="#" class="btn btn-primary btn-round">
+                                Create an Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Sign In
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="d-flex justify-content-end site-hero-formspc">
+                <div class="site-hero-form">
+                    <h1 class="h-white spc-mb-8">It’s easy to make an<br/>appointment in Medico</h1>
+                    <h6 class="h-white h-reg spc-mb-16">Let’s get started with the basic things</h6>
+                    <div class="site-hero-formbox">
+                        <form>
+                            <div class="form-group">
+                                <h4>What is the patient's name?</h4>
+                                <input type="text" class="form-control form-control-lg" placeholder="i.e. Martin Tyler">
+                            </div>
+                            <div class="form-group">
+                                <h4 class="spc-mb-8">What is problem is the patient experiencing?</h4>
+                                <h6 class="h-light">You can select multiple conditions</h6>
+                                <div class="form-control form-control-lg">
+                                    <ul class="tags-input">
+                                        <li class="tags">Fever<i class="fa fa-times"></i></li>
+                                        <li class="tags-new">
+                                        <input type="text"> 
+                                        </li>
+                                    </ul>  
+                                </div>
+                                <!-- <input type="text" class="form-control form-control-lg" placeholder="i.e. Martin Tyler"> -->
+                            </div>
+                            <div class="form-group">
+                                <h4>What is the patient located?</h4>
+                                <input type="text" class="form-control form-control-lg" placeholder="i.e. Martin Tyler">
+                            </div>
+                            <button class="btn btn-primary btn-lg btn-finddoc btn-effect" type="button">
+                                <span class="d-flex align-items-center justify-content-between"> 
+                                    <span>Lets start finding a doctor now</span><i class="fa fa-angle-right"></i>
+                                </span>                                
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="site-hero-overlay"></div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function existingTag(text)
+        {
+            var existing = false,
+                text = text.toLowerCase();
+
+            $(".tags").each(function(){
+                if ($(this).text().toLowerCase() == text) 
+                {
+                    existing = true;
+                    return "";
+                }
+            });
+
+            return existing;
+        }
+
+        $(function(){
+        $(".tags-new input").focus();
+        
+        $(".tags-new input").keyup(function(){
+
+                var tag = $(this).val().trim(),
+                length = tag.length;
+
+                if((tag.charAt(length - 1) == ',') && (tag != ","))
+                {
+                    tag = tag.substring(0, length - 1);
+
+                    if(!existingTag(tag))
+                    {
+                        $('<li class="tags"><span>' + tag + '</span><i class="fa fa-times"></i></i></li>').insertBefore($(".tags-new"));
+                        $(this).val("");	
+                    }
+                    else
+                    {
+                        $(this).val(tag);
+                    }
+                }
+            });
+        
+        $(document).on("click", ".tags i", function(){
+            $(this).parent("li").remove();
+        });
+        });
+
+        $(".btn-effect").on("click", function(e) {
+            e.preventDefault();
+
+            $(this).prepend('<span class="ripple"></span>');
+            
+            let $ripple = $(".ripple"),
+                offSet = $(this).offset(),
+                offSetY = e.pageY - offSet.top ,
+                offSetX = e.pageX - offSet.left;
+            
+            console.log(offSetY, offSetX);
+
+            $ripple.css({
+                top: offSetY,
+                left: offSetX
+            });
+        });                           
+    </script>
+</body>
+</html>

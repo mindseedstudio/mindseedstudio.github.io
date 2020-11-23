@@ -1,141 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medico :: Homepage</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Medico</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="sass/main.min.css">
-</head>
-<body>
-    <main class="site-hero">
-        <div class="container-fluid site-hero-spacing">
-            <header class="site-header d-flex justify-content-between align-items-center no-shadow no-pad">
-                <a href="" class="logo">
-                    <img src="images/logo-medico.png" alt="Medico" width="117">
-                </a>
-                <nav class="site-nav">
-                    <ul class="d-flex align-items-center">
-                        <li>
-                            <a href="#" class="btn btn-primary btn-round">
-                                Create an Account
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Sign In
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <section class="d-flex justify-content-end site-hero-formspc">
-                <div class="site-hero-form">
-                    <h1 class="h-white spc-mb-8">It’s easy to make an<br/>appointment in Medico</h1>
-                    <h6 class="h-white h-reg spc-mb-16">Let’s get started with the basic things</h6>
-                    <div class="site-hero-formbox">
-                        <form>
-                            <div class="form-group">
-                                <h4>What is the patient's name?</h4>
-                                <input type="text" class="form-control form-control-lg" placeholder="i.e. Martin Tyler">
-                            </div>
-                            <div class="form-group">
-                                <h4 class="spc-mb-8">What is problem is the patient experiencing?</h4>
-                                <h6 class="h-light">You can select multiple conditions</h6>
-                                <div class="form-control form-control-lg">
-                                    <ul class="tags-input">
-                                        <li class="tags">Fever<i class="fa fa-times"></i></li>
-                                        <li class="tags-new">
-                                        <input type="text"> 
-                                        </li>
-                                    </ul>  
-                                </div>
-                                <!-- <input type="text" class="form-control form-control-lg" placeholder="i.e. Martin Tyler"> -->
-                            </div>
-                            <div class="form-group">
-                                <h4>What is the patient located?</h4>
-                                <input type="text" class="form-control form-control-lg" placeholder="i.e. Martin Tyler">
-                            </div>
-                            <button class="btn btn-primary btn-lg btn-finddoc btn-effect" type="button">
-                                <span class="d-flex align-items-center justify-content-between"> 
-                                    <span>Lets start finding a doctor now</span><i class="fa fa-angle-right"></i>
-                                </span>                                
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
+    <link href="css/select2.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main class="landing-page-wrapper" style="background-image: url('img/background-img.png')">
+      <header>
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="Medico"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><i class="fas fa-user-md"></i> Find a Practitioner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn--primary btn--rounded" href="#"><span>Create an account</span></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
         </div>
-        <div class="site-hero-overlay"></div>
+      </header>
+      <section class="banner-section">
+        <div class="container-fluid">
+            <div class="search-form-wrap">
+              <h2 class="h1">It’s easy to make an appointment in Medico</h2>
+              <p>Let’s get started with the basic things</p>
+              <form>
+                <div class="form-group">
+                  <label class="h3">What is the patient’s name?</label>
+                  <input type="text" name="Patient Name" class="form-control" placeholder="i.e. Martin Tyler" />
+                </div>
+                <div class="form-group">
+                  <label class="h3">What conditions is {the patient} facing?</label>
+                  <span>You can select multiple conditions</span>
+                  <select class="form-control multiple-select" name="conditions[]" multiple="multiple">
+                    <option value="Fever">Fever</option>
+                    <option value="Neck Pain">Neck Pain</option>
+                    <option value="Headache">Headache</option>
+                    <option value="Cough">Cough</option>
+                    <option value="Common Cold">Common Cold</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="h3">Where is {the patient} located?</label>
+                  <input type="text" name="Location" class="form-control" placeholder="i.e. Sydney" />
+                </div>
+                <button type="button" class="btn submit-btn">Lets start finding a doctor now <i class="fas fa-chevron-right"></i></button>
+              </form>
+            </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container-fluid">
+          <div class="d-md-flex footer-links .flex-lg-wrap">
+            <ul class="list-style-none p-0 m-0">
+              <li>
+                <a href="#">Help</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms and Conditions</a>
+              </li>
+            </ul>
+            <span class="ml-auto">Copyright 2020. All Rights Reserved.</span>
+          </div>
+        </div>
+      </footer>
     </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function existingTag(text)
-        {
-            var existing = false,
-                text = text.toLowerCase();
 
-            $(".tags").each(function(){
-                if ($(this).text().toLowerCase() == text) 
-                {
-                    existing = true;
-                    return "";
-                }
-            });
-
-            return existing;
-        }
-
-        $(function(){
-        $(".tags-new input").focus();
-        
-        $(".tags-new input").keyup(function(){
-
-                var tag = $(this).val().trim(),
-                length = tag.length;
-
-                if((tag.charAt(length - 1) == ',') && (tag != ","))
-                {
-                    tag = tag.substring(0, length - 1);
-
-                    if(!existingTag(tag))
-                    {
-                        $('<li class="tags"><span>' + tag + '</span><i class="fa fa-times"></i></i></li>').insertBefore($(".tags-new"));
-                        $(this).val("");	
-                    }
-                    else
-                    {
-                        $(this).val(tag);
-                    }
-                }
-            });
-        
-        $(document).on("click", ".tags i", function(){
-            $(this).parent("li").remove();
-        });
-        });
-
-        $(".btn-effect").on("click", function(e) {
-            e.preventDefault();
-
-            $(this).prepend('<span class="ripple"></span>');
-            
-            let $ripple = $(".ripple"),
-                offSet = $(this).offset(),
-                offSetY = e.pageY - offSet.top ,
-                offSetX = e.pageX - offSet.left;
-            
-            console.log(offSetY, offSetX);
-
-            $ripple.css({
-                top: offSetY,
-                left: offSetX
-            });
-        });                           
-    </script>
-</body>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
 </html>
