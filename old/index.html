@@ -45,10 +45,10 @@
                                 <h4 class="spc-mb-8">What is problem is the patient experiencing?</h4>
                                 <h6 class="h-light">You can select multiple conditions</h6>
                                 <div class="form-control form-control-lg">
-                                    <ul class="tags-input">
+                                    <ul id="tags-in" class="tags-input">
                                         <li class="tags">Fever<i class="fa fa-times"></i></li>
-                                        <li class="tags-new">
-                                        <input type="text"> 
+                                        <li id="tags-new">
+                                            <input type="text"> 
                                         </li>
                                     </ul>  
                                 </div>
@@ -79,8 +79,8 @@
             var existing = false,
                 text = text.toLowerCase();
 
-            $(".tags").each(function(){
-                if ($(this).text().toLowerCase() == text) 
+            document.querySelectorAll(".tags").forEach(function(e){
+                if (e.textContent.toLowerCase() == text) 
                 {
                     existing = true;
                     return "";
@@ -90,33 +90,40 @@
             return existing;
         }
 
-        $(function(){
-        $(".tags-new input").focus();
+        function close(e){
+           return e;
+        }
+
         
-        $(".tags-new input").keyup(function(){
+        document.querySelector("#tags-new input").addEventListener('keyup', function(){
+            // console.log(this.value);
+            var tag = this.value.trim(),
+            length = tag.length;
 
-                var tag = $(this).val().trim(),
-                length = tag.length;
-
-                if((tag.charAt(length - 1) == ',') && (tag != ","))
+            if((tag.charAt(length - 1) == ',') && (tag != ","))
+            {
+                tag = tag.substring(0, length - 1);
+                // console.log(existingTag(tag));
+                if(!existingTag(tag))
                 {
-                    tag = tag.substring(0, length - 1);
-
-                    if(!existingTag(tag))
-                    {
-                        $('<li class="tags"><span>' + tag + '</span><i class="fa fa-times"></i></i></li>').insertBefore($(".tags-new"));
-                        $(this).val("");	
-                    }
-                    else
-                    {
-                        $(this).val(tag);
-                    }
+                    var ulist = document.getElementById('tags-in');
+                    var list = document.createElement('LI');
+                    list.classList.add('tags');
+                    list.innerHTML = tag + '<i class="fa fa-times" onclick="close()"></i>';
+                    ulist.insertBefore(list, ulist.lastElementChild);
+                    this.value = "";	
                 }
-            });
-        
-        $(document).on("click", ".tags i", function(){
-            $(this).parent("li").remove();
+                else
+                {
+                    this.value = tag;
+                }
+            }
         });
+
+        document.addEventListener('click', function(e){
+            if(e.target.parentNode.className == "tags"){
+                e.target.parentNode.remove();
+            }
         });
 
         $(".btn-effect").on("click", function(e) {

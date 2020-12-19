@@ -1,0 +1,51 @@
+.text-center-block {
+    .tick {
+        @include border-radius(50%);
+        background: $green;
+        color: $white;
+        height: 103px;
+        width: 103px;
+        display: inline-block;
+        font-size: 38px;
+        line-height: 110px;
+        margin-bottom: 30px;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+    .text {
+        margin-bottom: 40px;
+        @include breakpoint(md){
+            margin-bottom: 60px;
+        }
+        @include breakpoint(lg){
+            margin-bottom: 100px;
+        }
+        &--border {
+            position: relative;
+            &:after {
+                content: '';
+                background: $gray-300;
+                position: absolute;
+                left: 50%;
+                bottom: -20px;
+                width: 67px;
+                height: 1px;
+                transform: translateX(-50%);
+                @include breakpoint(md){
+                    bottom: -30px;
+                }
+                @include breakpoint(lg){
+                    bottom: -55px;
+                }
+            }
+        }
+    }
+    .text-gray {
+        span {
+            @include breakpointMax(sm){
+                display: block;
+            }
+        }
+    }
+}

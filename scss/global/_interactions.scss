@@ -1,0 +1,10 @@
+$blue_hover: #0D36E3;
+
+.btn{
+    &--primary {
+        &:hover{
+            transition: 0.3s all ease-in-out;
+            background-color: $blue_hover;
+        }
+    }
+}

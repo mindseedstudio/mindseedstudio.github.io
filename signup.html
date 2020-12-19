@@ -104,7 +104,7 @@
                                             </label> 
                                         <p>
                                     </div>
-                                    <button type="button" class="btn btn--lg btn--primary">Sign Up</button>
+                                    <button type="button" class="btn btn--lg btn--primary" onclick="toLogin()">Sign Up</button>
                                     <p>Already have an account? <a href="login.html" class="link text-underline font-weight-bold">Log In</a></p>
                                 </form>
                             </div>
@@ -133,6 +133,10 @@
     <script src="js/select2.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
-    
+    <script>
+        function toLogin(){
+          return location.href = "login.html"
+        }  
+      </script>
   </body>
 </html>

@@ -1,0 +1,119 @@
+// General Style
+html, body {
+    height: 100%;
+    min-height: 100%;
+    overflow: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a {
+    transition: 0.4s all ease-in-out;
+}
+
+strong {
+    font-weight: $bold;
+}
+
+main {
+    position: relative;
+    padding-bottom: 80px;
+    min-height: calc(100% - 59px);
+    @include breakpoint(md){
+        min-height: calc(100% - 89px);
+    }
+}
+
+.container-fluid {
+    padding: rem-calc(0 20);
+    @include breakpoint(md){
+        padding: rem-calc(0 40);
+    }
+    @include breakpoint(lg){
+        padding: rem-calc(0 60);
+    }
+}
+
+.padding {
+    padding: 50px 0;
+    @include breakpoint(md){
+        padding: 80px 0;
+    }
+    @include breakpoint(lg){
+        padding: 150px 0;
+    }
+} 
+
+.list-style-none {
+    list-style: none;
+}
+
+.pink {
+    color: $pink;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.font-weight-medium {
+    font-weight: $medium !important;
+}
+
+.link {
+    color: $blue;
+}
+
+.text-underline {
+    text-decoration: underline;
+    transition: 0.4s all ease-in-out;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.text-sm {
+    color: $gray;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-xs {
+    font-size: 12px;
+    line-height: 14px;
+    color: $gray-400;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.linear-background {
+    background: linear-gradient(135deg, #3056F5 0%, #8048FF 100%);
+    height: 100%;
+    position: relative;
+    &:before {
+        content: '';
+        background-image: url('../img/shadow.png');
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+}
+
+.border-top {
+    border-top: 1px solid $gray-200;
+}

@@ -1,0 +1,55 @@
+h1, .h1 {
+    color: $gray-700;
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: $regular;
+    @include breakpoint(sm){
+        font-size: 32px;
+        line-height: 40px;
+    }
+    @include breakpoint(md){
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+h2, .h2 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: $bold;
+    margin-bottom: 30px;
+    @include breakpoint(sm){
+        font-size: 22px;
+        line-height: 30px;
+    }
+    @include breakpoint(md){
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+h3, .h3 {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: $regular;
+    @include breakpoint(md){
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+h4, .h4 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: $regular;
+}
+
+h5, .h5 {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: $regular;
+}
+
+p {
+    color: $gray-900;
+}
