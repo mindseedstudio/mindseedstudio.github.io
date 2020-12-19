@@ -1,0 +1,179 @@
+.site-profile{
+    padding: 30px 0;
+    background-color: #F6F6F9;
+}
+
+.profile-image{
+    margin: 0;
+    margin-right: 24px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    min-width: 140px;
+    min-height: 140px;
+}
+
+.profile-accept{
+    font-size: 10px;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    padding: 4px 5px;
+    background: #3056F5;
+    color: #fff;
+    border-radius: 9px;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.profile-practice{
+    margin-top: 10px;
+}
+
+.profile-practice span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profile-dotseparator{
+    font-size: 6px;
+    margin: 0 5px;
+}
+
+.profile-rating {
+    margin-top: 20px;
+}
+
+.profile-rating h6{
+    margin-bottom: 10px;
+    color: #9999A1;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.profile-rate .stars{
+    margin-right: 10px;
+}
+
+.profile-review-count{
+    color: #B9B7C1;
+    font-size: 12px;
+}
+
+.site-profile-detail{
+    padding: 30px 0;
+}
+
+.site-practice-address{
+    font-size: 14px;
+    color: #9999A1;
+}
+
+.site-practice-item{
+    margin-bottom: 30px;
+}
+
+.site-practice-item:last-child{
+    margin-bottom: 0;
+}
+
+.site-practice-item > ul{
+    margin-top: 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.site-practice-item > ul i{
+    margin-right: 10px;
+}
+
+.site-practice-hours dl{
+    margin-bottom: 9px;
+}
+
+.site-practice-hours dd, .site-practice-hours dt{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.site-practice-hours dt{
+    width: 52px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #E9EBEF;
+    margin-right: 5px;
+}
+
+.site-profile-about, .site-profile-speciality{
+    margin-bottom: 30px;
+}
+
+.site-profile-review-title{
+    margin-bottom: 20px;
+ }
+
+ .site-profile-review-title p{
+     color: #9999A1;
+ }
+
+ .site-profile-review-items{
+     padding: 20px;
+     border: 1px solid #E9EBEF;
+     margin-bottom: 20px;
+ }
+
+ .site-profile-review-items .stars{
+      margin-bottom: 10px;
+ }
+
+ .site-profile-review-items > p{
+     line-height: 24px;
+     margin-bottom: 10px;
+ }
+
+ .site-profile-reviewer{
+     text-align: right;
+     display: block;
+     font-size: 14px;
+ }
+
+ .site-profile-review-more{
+     text-align: center;
+ }
+
+ .site-profile-about p{
+     line-height: 24px;
+ }
+
+ .profile-call, .profile-message{
+     line-height: 30px;
+     color: #2B2C28;
+ }
+
+ .profile-call span, .profile-message span{
+     width: 30px;
+     height: 30px;
+     background-color: #2549E1;
+     font-size: 12px;
+     border-radius: 50%;
+     color: #fff;
+     display: inline-block;
+     vertical-align: middle;
+     text-align: center;
+     margin-right: 10px;
+ }
+
+ .profile-call{
+     margin-right: 20px;
+ }
+
+ .profile-appoint{
+     margin-bottom: 20px!important;
+ }
